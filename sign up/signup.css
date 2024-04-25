@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap');
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #000000;
+    margin: 0; /* Asegura que no hay margen exterior para el cuerpo */
+}
+
+/* Estilos generales para el encabezado */
+header {
+    background-color: #040404; /* Fondo oscuro para coincidir con el estilo de la página */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fija el encabezado en la parte superior */
+    width: 100%; /* Asegura que el encabezado cubra el ancho completo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Mantiene el encabezado sobre otros elementos */
+}
+
+.header-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Centra la navegación en el encabezado */
+    display: flex;
+    justify-content: right; /* Alinea los elementos de la lista horizontalmente en el centro */
+    align-items: center;
+}
+
+.header-nav li {
+    margin: 0 15px; /* Añade espacio entre los elementos de la lista */
+}
+
+.header-nav a {
+    color: #D4FF00; /* Color amarillo para los enlaces para mantener la coherencia */
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Utiliza la misma familia de fuentes para coherencia */
+    font-size: 18px;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .header-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-nav li {
+        margin-bottom: 10px;
+
+    }
+}
+
+.content {
+    background-color: #040404;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(212, 255, 0);
+    width: 90%;
+    max-width: 500px;
+    margin: 100px auto 0; /* Añade un margen superior para no superponerse con el encabezado */
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el width/height */
+}
+
+h1, p, .signup-form input, .check-container label, button {
+    color: white; /* Asegura el color de texto para todos los elementos relevantes */
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 7px 0 15px;
+    border: 1px solid #585853c4;
+    box-shadow: 0 0 5px rgb(254, 254, 254);
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.check-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.check-container label {
+    margin-left: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    background-color: #586526;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #332d2de6;
+}
+
+a {
+    color: #D4FF00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
